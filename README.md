@@ -50,8 +50,8 @@ A high-performance, concurrent in-memory key-value store built with Go standard 
 ## Directory Structure
 
 ```text
-kvstore/
-├── store/
+KVStore/
+├── Store/
 │   ├── errors.go       # Sentinel domain errors
 │   ├── item.go         # Value wrapper and TTL evaluation logic
 │   ├── store.go        # Thread-safe KeyValueStore implementation
@@ -72,8 +72,8 @@ kvstore/
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/](https://github.com/)<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone git@github.com:Harihkumar990/concurrent-kv-store.git
+   cd concurrent-kv-store
    ```
 
 2. Run the application:
@@ -86,7 +86,7 @@ kvstore/
 ## Running Tests
 
 Execute the comprehensive test suite with verbose output and the Go race detector enabled:
-
+This command will work only on linux, windows doesn't support race.
 ```bash
 go test -v -race ./...
 ```
